@@ -6,4 +6,11 @@ function countOccurrences(string, char) {
   return count;
 }
 
+// Alternate solution
+function countOccurences2(string, char) {
+  return string.split(char).length - 1;
+}
+
+const countOccurences3 = (string, char) => string.split(char).length - 1;
+
 module.exports = countOccurrences;
